@@ -44,6 +44,10 @@ for attraction in attractions.itertuples():
         wait_time = queue.get('STANDBY', {}).get('waitTime', None)
     else:
         wait_time = None
+
+    # If status is OPERATING and wait time is none, set wait time to 0
+    if status == "OPERATING" and wait_time is None:
+        wait_time = 0
     
     # Appending the ride details to the rides list
     rides.append({
@@ -51,6 +55,8 @@ for attraction in attractions.itertuples():
         "status": status,
         "wait_time": wait_time
     })
+
+# Delete Attractions with null wait times
 
 
 # Generating a CSV file with the rides data
