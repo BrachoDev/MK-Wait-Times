@@ -12,12 +12,30 @@ This project provides a Python script that automatically downloads live wait tim
 
 - [`script.py`](script.py): Python script to fetch and process the data.
 - [`Attractions_waitTimes.csv`](Attractions_waitTimes.csv): Generated CSV file with the latest wait times.
-- [`Tableau_project.twb`](Tableau_project.twb): Tableau workbook for visualizing the data.
-- `.gitignore`: Excludes sensitive or generated files from version control.
 
 ## Usage
 
 1. **Install dependencies**  
    Make sure you have Python 3 and the required packages:
+
    ```sh
    pip install requests pandas
+   ```
+
+2. **Run the script**
+   Execute the script to fetch the latest data and generate the CSV:
+
+   ```sh
+   python script.py
+   ```
+
+3. **View or analyze the data**
+   Open Attractions_waitTimes.csv in your preferred tool, or use the included Tableau workbook for visualization [CLICK HERE FOR EXAMPLE](https://public.tableau.com/app/profile/carlos.bracho/viz/Tableau_project_17488090187700/Dashboard1?publish=yes).
+
+## Data Source
+
+- API: [themeparks.wiki API](https://themeparks.wiki/api/http)
+
+## License
+
+This project is for educational and non-commercial use. Please respect the terms of use of the [themeparks.wiki](https://themeparks.wiki) API.
