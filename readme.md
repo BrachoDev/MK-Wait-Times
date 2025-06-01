@@ -39,5 +39,3 @@ This project provides a Python script that automatically downloads live wait tim
 ## License
 
 This project is for educational and non-commercial use. Please respect the terms of use of the [themeparks.wiki](https://themeparks.wiki) API.
-
-TESTING
