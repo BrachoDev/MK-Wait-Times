@@ -47,7 +47,7 @@ for attraction in attractions.itertuples():
     
     # Appending the ride details to the rides list
     rides.append({
-        "ride_name": ride_name,
+        "Attraction_name": ride_name,
         "status": status,
         "wait_time": wait_time
     })
