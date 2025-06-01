@@ -56,8 +56,6 @@ for attraction in attractions.itertuples():
         "wait_time": wait_time
     })
 
-# Delete Attractions with null wait times
-
 
 # Generating a CSV file with the rides data
 generate_csv(rides, "Attractions_waitTimes.csv")
